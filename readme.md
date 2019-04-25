@@ -46,7 +46,7 @@ you should the be able to see the data here [http://localhost:3000/conditions.js
 To start the application and a simple data server.
 
 ```
-$ npm run test
+$ npm run dev
 ```
 
 
