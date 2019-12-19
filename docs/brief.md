@@ -7,14 +7,12 @@ Use the framework provided to produce a single page web application that can loa
 
 ## Backend Application
 
-
-**Endpoint:** 
+*As a client application I would like to be able to get conditions data via below endpoint.
 
 http://localhost:5000/api/conditions
 
-**Data Path:**  
 
-`data/conditions.json`
+Conditions Data : `data/conditions.json`
 
 
 ## Frontend Application
