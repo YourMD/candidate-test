@@ -9,6 +9,7 @@ Major Dependencies
 * React [https://reactjs.org]()
 * Jest [https://jestjs.io]()
 * Babel [https://babeljs.io]()
+* Express [https://expressjs.com/]()
 
 ## Scripts
 
@@ -33,17 +34,17 @@ $ npm run test
 
 ### Data
 
-Simple server running to provide the data.
+Simple restful api to provide the data.
 
 ```
-$ npm run data 
+$ npm run backend 
 ```
 
-you should the be able to see the data here [http://localhost:3000/conditions.json]() 
+you should the be able to see running backend application here [http://localhost:5000/api/conditions]() 
 
 ### Dev
 
-To start the application and a simple data server.
+To start the frontend application and a simple backend application.
 
 ```
 $ npm run dev

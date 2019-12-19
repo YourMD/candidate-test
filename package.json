@@ -4,13 +4,14 @@
     "description": "Simple single page app",
     "scripts": {
         "start": "parcel index.html",
-        "data": "http-server ./data -p 3000 --cors",
-        "dev": "concurrently \"npm run start\" \"npm run data\"",
+        "backend": "node server/index.js",
+        "dev": "concurrently \"npm run start\" \"npm run backend\"",
         "test": "npx jest"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "express": "^4.17.1",
         "prop-types": "^15.7.2",
         "react": "^16.0.0",
         "react-dom": "^16.8.6",
@@ -33,7 +34,6 @@
         "concurrently": "^4.1.0",
         "enzyme": "^3.9.0",
         "enzyme-adapter-react-16": "^1.11.2",
-        "http-server": "^0.11.1",
         "jest": "^24.5.0",
         "parcel": "^1.11.0",
         "parcel-bundler": "^1.11.0",

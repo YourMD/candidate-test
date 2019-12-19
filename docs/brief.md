@@ -4,10 +4,21 @@
 
 Use the framework provided to produce a single page web application that can load and display the contents of the supplied JSON file.
 
-**Data URL:**  
-http://localhost:3000/conditions.json
 
-The complete JSON file should be loaded via a HTTP request.
+## Backend Application
+
+
+**Endpoint:** 
+
+http://localhost:5000/api/conditions
+
+**Data Path:**  
+
+`data/conditions.json`
+
+
+## Frontend Application
+
 
 Display an the image, title and snippet as shown in the wireframes. It could be that not all fields exist for each condition, if so the design should handle this gracefully.
 
