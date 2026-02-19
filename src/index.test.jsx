@@ -1,14 +1,14 @@
 import React from "react";
-import { configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
-
-configure({ adapter: new Adapter() });
-import { shallow } from "enzyme";
+import { renderToStaticMarkup } from "react-dom/server";
+import { describe, expect, it } from "vitest";
 
 import { App } from "./app";
 
-describe("test for Thing", () => {
-  it("expect the correct number of h1s to equal 1", () => {
-    expect(shallow(<App />).find("h1").length).toEqual(1);
+describe("App", () => {
+  it("renders exactly one h1", () => {
+    const html = renderToStaticMarkup(<App />);
+    const headingMatches = html.match(/<h1/g) || [];
+
+    expect(headingMatches).toHaveLength(1);
   });
 });
